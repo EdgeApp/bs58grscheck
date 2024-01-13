@@ -40,7 +40,7 @@
     "unit": "tape test/*.js"
   },
   "dependencies": {
-    "@noble/hashes": "^1.2.0",
+    "@noble/hashes": "github:Groestlcoin/noble-hashes#add-groestl-clean",
     "bs58": "^5.0.0"
   },
   "devDependencies": {
