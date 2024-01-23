@@ -1,7 +1,7 @@
 'use strict'
 
-var { groestl256 } = require('@noble/hashes/groestl256')
-var { groestl512 } = require('@noble/hashes/groestl512')
+var { groestl256 } = require('hashes-grs/groestl256')
+var { groestl512 } = require('hashes-grs/groestl512')
 var bs58grscheckBase = require('./base')
 
 // GROESTL512(GROESTL512(buffer))

@@ -2,7 +2,7 @@ var tape = require('tape')
 var Buffer = require('safe-buffer').Buffer
 var createBlakeHash = require('blake-hash')
 var bs58grscheckBase = require('../base')
-var { hexToBytes } = require('@noble/hashes/utils')
+var { hexToBytes } = require('hashes-grs/utils')
 
 function blake256x2 (buffer) {
   buffer = createBlakeHash('blake256').update(Buffer.from(buffer)).digest()

@@ -1,7 +1,7 @@
 var bs58grscheck = require('../')
 var fixtures = require('./fixtures')
 var tape = require('tape')
-var { bytesToHex, hexToBytes } = require('@noble/hashes/utils')
+var { bytesToHex, hexToBytes } = require('hashes-grs/utils')
 
 fixtures.valid.forEach(function (f) {
   tape('decodes ' + f.string, function (t) {
