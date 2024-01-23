@@ -1,12 +1,11 @@
 'use strict'
 
-var createHash = require('create-hash')
+var { groestl256 } = require('hashes-grs/groestl256')
+var { groestl512 } = require('hashes-grs/groestl512')
 var bs58grscheckBase = require('./base')
-var groestlhash = require('groestl-hash-js')
 
 // GROESTL512(GROESTL512(buffer))
 function groestl (buffer) {
-  return Buffer(groestlhash.groestl_2(buffer, 1, 1))
+  return Buffer.from(groestl256(groestl512(buffer)))
 }
-
 module.exports = bs58grscheckBase(groestl)
