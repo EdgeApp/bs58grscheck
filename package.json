@@ -1,7 +1,7 @@
 {
-  "name": "bs58grscheck",
-  "version": "2.1.2",
-  "description": "A straightforward implementation of base58-check encoding",
+  "name": "@edge.app/bs58grscheck",
+  "version": "2.1.2-edge.1",
+  "description": "A straightforward implementation of base58-check encoding (Edge fork of Groestlcoin/bs58grscheck — published to avoid git-dep prep bug)",
   "keywords": [
     "base",
     "base58grs",
@@ -40,7 +40,7 @@
   "dependencies": {
     "bs58": "^4.0.0",
     "create-hash": "^1.1.0",
-    "groestl-hash-js": "https://github.com/Groestlcoin/groestl-hash-js.git",
+    "groestl-hash-js": "npm:@edge.app/groestl-hash-js@^1.0.0-edge.1",
     "safe-buffer": "^5.1.2"
   },
   "devDependencies": {
@@ -48,5 +48,8 @@
     "nyc": "^11.3.0",
     "standard": "^10.0.3",
     "tape": "^4.6.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
